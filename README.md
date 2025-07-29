@@ -20,9 +20,13 @@ classDiagram
         -Number limit
     }
 
-    class Feature {
+    class BaseItem {
         -String icon
         -String description
+    }
+
+    class Feature {
+        
     }
 
     class Card {
@@ -31,12 +35,13 @@ classDiagram
     }
 
     class News {
-        -String icon
-        -String description
+        
     }
 
-    User --> Account
-    User --> Feature
-    User --> Card
-    User --> News
+    User "1" *-- "1" Account
+    User "1" *-- "N" Feature
+    User "1" *-- "1" Card
+    User "1" *-- "N" News
+    BaseItem <|-- Feature
+    BaseItem <|-- News
 ```

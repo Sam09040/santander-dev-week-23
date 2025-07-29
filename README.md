@@ -25,13 +25,13 @@ classDiagram
         -String description
     }
 
-    class Feature {
-        
-    }
-
     class Card {
         -String number
         -Number limit
+    }
+    
+    class Feature {
+        
     }
 
     class News {

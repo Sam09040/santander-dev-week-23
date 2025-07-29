@@ -8,8 +8,8 @@ classDiagram
     class User {
         -String name
         -Account account
-        -Feature[] features
         -Card card
+        -Feature[] features
         -News[] news
     }
 
@@ -29,7 +29,7 @@ classDiagram
         -String number
         -Number limit
     }
-    
+
     class Feature {
         
     }
